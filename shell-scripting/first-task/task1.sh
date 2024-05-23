@@ -3,11 +3,11 @@
 #There should also be a condition if the file is more than 20 lines it give an message that it is too big and if the file is empty
 #it should print file is empty.
 
-' #!/usr/bin/env bash
-num=$(cat text | wc -l)
+#!/usr/bin/env bash
+num=$(cat test1.txt | wc -l)
 temp=1
 
-if [ $num -gt 0 ] && [ $num -lt 20]
+if [ $num -gt 0 ] && [ $num -lt 20 ]
 then
 while [ $temp -lt $num ]
 do
@@ -15,7 +15,7 @@ do
     echo $n this is line number $temp
     temp=$((temp+1))
 done
-elif[ $num -eq 0]
+elif [ $num -eq 0 ]
 then
     echo " this file is empty! "
 else
